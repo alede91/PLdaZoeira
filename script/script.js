@@ -13,10 +13,9 @@ async function fetchData(){
 
 async function updateScore(){
     object = await fetchData();
-    playerOneScore.innerText = object.allison.score;
-    playerTwoScore.innerText = object.claudinho.score;
-    playerThreeScore.innerText = object.dudu.score;
-    console.log(object)
+    playerOneScore.innerText = `${object.allison.score} Pts.`;
+    playerTwoScore.innerText = `${object.claudinho.score} Pts.`;
+    playerThreeScore.innerText = `${object.dudu.score} Pts.`;
 };
 
 updateScore();
